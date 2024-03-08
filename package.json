@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:angulalar-tutorial": "node dist/angulalar-tutorial/server/server.mjs"
+    "custom-command": "echo Hello world"
   },
   "private": true,
   "dependencies": {
