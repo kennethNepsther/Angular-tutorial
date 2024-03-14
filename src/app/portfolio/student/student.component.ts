@@ -39,8 +39,10 @@ export class StudentComponent {  // class
 
 }
 
-// Acessing properties
+// Object
 const estudent = new StudentComponent();
+
+// Acessing properties
 console.log(estudent.name); // output: kenneth
 console.log(estudent.age);
 console.log(estudent.email);
