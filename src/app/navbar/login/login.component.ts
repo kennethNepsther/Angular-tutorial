@@ -28,17 +28,45 @@ export class LoginComponent {
     let vector2:number[]=[1,2,3,4,5] // Array
     let person:{name: String, age:number} ={name: "John", age: 20}; // Object
 
+    /*
+      console.log("Null", value);
+      console.log("Nome Completo: ",nome, sobrenome);
+      console.log("Boolean:", bool);
+      console.log("Number =", num2+num);
+
+      console.log("Array", vector);
+
+      console.log("person", person);
+    */
 
 
+      //======= operators================
 
-    console.log("Null", value);
-    console.log("Nome Completo: ",nome, sobrenome);
-    console.log("Boolean:", bool);
-    console.log("Number =", num2+num);
+      let a:number= 10;
+      let b:number =10;
 
-    console.log("Array", vector);
+      let sum: number = a+b
+      let sub: number = a-b
+      let mult: number = a*b
+      let divisao: number = a/b
+      let modulus: number = a%b
 
-    console.log("person", person);
+      console.log("Soma = ", sum);
+      console.log("Subtração = ", sub);
+      console.log("multiplicação = ", mult);
+      console.log("diivisão = ", divisao);
+      console.log("Modulu = ", modulus);
+
+      let lessThan:boolean;
+      lessThan =(a==b)
+
+      console.log("not equal = ", lessThan);
+
+      //Ternary(condition? true:false)
+      let age = 18;
+
+      let checkAge =(age>18) ? 'Adult': 'Child';
+      console.log('Check Age',checkAge);
 
 
   }
