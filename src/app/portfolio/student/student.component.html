@@ -1,1 +1,29 @@
-<p>student works!</p>
+<div class="form-container" *ngIf="isFormVisible">
+  <p>Reactive forms</p>
+
+  <form [formGroup]="userForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" formControlName="name" >
+    <div *ngIf="userForm.get('name')?.hasError('required') && userForm.get('name').click"></div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" formControlName="email" >
+
+    <ul>
+      <li *ngFor="let item of items">
+        {{items}}
+
+      </li>
+    </ul>
+
+    <div [ngSwitch]="userRole">
+      <div *ngSwitchCase="'admin'">
+        <p>Admin</p>
+      </div>
+      <div *ngSwitchCase="'user'">
+        <p>User</p>
+      </div>
+    </div>
+    <button (click)="onSubmit()" >Submit</button>
+
+  </form>
+</div>
