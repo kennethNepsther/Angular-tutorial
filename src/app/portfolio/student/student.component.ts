@@ -32,7 +32,7 @@ export class StudentComponent {  // class
   // Method
   greet(){
 
-    console.log("chamando a função greeter");
+    //console.log("chamando a função greeter");
 
   }
 
@@ -43,9 +43,9 @@ export class StudentComponent {  // class
 const estudent = new StudentComponent();
 
 // Acessing properties
-console.log(estudent.name); // output: kenneth
-console.log(estudent.age);
-console.log(estudent.email);
+//console.log(estudent.name); // output: kenneth
+//console.log(estudent.age);
+//console.log(estudent.email);
 
 estudent.greet();
 
